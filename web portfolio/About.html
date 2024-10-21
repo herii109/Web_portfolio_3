@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    header nav ul li {
+      margin: 0 20px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .about-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .about-content img {
+      width: 300px; /* Ukuran lebih besar */
+      height: 300px; /* Ukuran lebih besar */
+      border-radius: 50%; /* Membuat gambar bulat */
+      margin-bottom: 20px; /* Ruang di bawah gambar */
+      border: 5px solid #4CAF50; /* Border hijau */
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+      transition: transform 0.3s, box-shadow 0.3s; /* Transisi untuk efek hover */
+    }
+
+    .about-content img:hover {
+      transform: scale(1.1); /* Zoom saat hover */
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); /* Meningkatkan bayangan saat hover */
+      filter: brightness(1.1); /* Mencerahkan gambar saat hover */
+    }
+
+    .about-content p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .skills-section {
+      margin-top: 40px;
+      background-color: #e2e7f1; /* Latar belakang yang lebih cerah */
+      padding: 20px; /* Tambahkan padding untuk ruang */
+      border-radius: 8px; /* Membuat sudut membulat */
+    }
+
+    .skills-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .skill-item {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      width: 30%;
+      text-align: center;
+      border-radius: 8px; /* Sudut membulat */
+      transition: transform 0.3s, box-shadow 0.3s; /* Transisi untuk efek hover */
+    }
+
+    .skill-item:hover {
+      transform: translateY(-5px); /* Mengangkat item saat dihover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat dihover */
+    }
+
+    .skill-item h3 {
+      margin-bottom: 10px;
+      color: #333; /* Warna teks */
+    }
+
+    .skill-item p {
+      font-size: 1em;
+      color: #666; /* Warna teks yang lebih lembut */
+    }
+
+    footer {
+      background-color: rgba(51, 51, 51, 0.9); /* Transparansi untuk memberi efek latar belakang */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Mengubah dari fixed menjadi relative */
+      width: 100%;
+      bottom: 0;
+      z-index: -1; /* Menempatkan footer di belakang konten */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="about-section">
+  <h1>Tentang Saya</h1>
+  <div class="about-content">
+    <img src="gambar/heriiii.jpeg" alt="Your Profile Picture">
+    <p>Halo! Saya seorang pengembang web yang memiliki passion dalam menciptakan desain yang bersih dan fungsional. Saya menikmati mengubah masalah kompleks menjadi desain yang sederhana, indah, dan intuitif. Ketika saya tidak sedang coding atau mendesain, Anda bisa menemukan saya di kedai kopi lokal atau menjelajahi tempat-tempat baru.</p>
+    <p>Saya memiliki latar belakang dalam pengembangan web, desain UI/UX, serta pengalaman bekerja dengan berbagai bahasa pemrograman seperti JavaScript, HTML, dan CSS. Saya selalu mencari tantangan baru untuk memperluas keterampilan saya.</p>
+</div>
+
+  <div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item">
+        <h3>Web Development</h3>
+<p>Mahir dalam HTML, CSS, JavaScript, dan berbagai framework.</p>
+      </div>
+      <div class="skill-item">
+        <h3>UI/UX Design</h3>
+        <p>Pengalaman dalam menciptakan desain yang berfokus pada pengguna untuk aplikasi web dan mobile.</p>
+    </div>
+      <div class="skill-item">
+        <h3>Problem Solving</h3>
+        <p>Terampil dalam menganalisis masalah kompleks dan menemukan solusi yang efisien.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 My Portfolio | All rights reserved</p>
+</footer>
+
+</body>
+</html>
